@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    background-image: url(https://static.euronews.com/articles/stories/06/60/85/44/1440x810_cmsv2_fc417c87-9255-5dc4-9ab1-8d4e43562cc6-6608544.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative; /* Para que el botón NO se mueva dentro del contenedor */
+}
+
+p {
+    font-size: 24px;
+    color: black; /* Texto en negro */
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#yesBtn {
+    transform: translate(-10px, 0); /* Ajuste menor para mejor diseño */
+}
+
+#noBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
